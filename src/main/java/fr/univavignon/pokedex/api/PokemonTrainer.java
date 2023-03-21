@@ -28,7 +28,7 @@ public class PokemonTrainer {
 		this.team = team;
 		this.pokedex = pokedex;
 	}
-	
+
 	/** Name getter. **/
 	public String getName() {
 		return name;
