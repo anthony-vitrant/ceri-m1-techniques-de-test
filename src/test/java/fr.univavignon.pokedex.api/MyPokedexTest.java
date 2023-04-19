@@ -79,7 +79,7 @@ public class MyPokedexTest {
     @Test
     public void testGetPokemons() {
         // Test getPokemons method
-        Pokemon pokemon1 = new Pokemon(0, "Bulbasaur", 126, 126, 90, 613, 64, 4000, 4, 50;
+        Pokemon pokemon1 = new Pokemon(0, "Bulbasaur", 126, 126, 90, 613, 64, 4000, 4, 50);
         Pokemon pokemon2 = new Pokemon(1, "Ivysaur", 156, 158, 120, 900, 100, 8000, 8, 50);
         Pokemon pokemon3 = new Pokemon(2, "Venusaur", 198, 200, 160, 1800, 300, 16000, 16, 50);
 
