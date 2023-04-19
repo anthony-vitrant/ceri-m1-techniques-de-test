@@ -65,15 +65,4 @@ public class IPokemonTrainerFactoryTest {
         //assertEquals(bulbasaur, ashPokedex.getPokemon(index));
     }
 
-    @Test
-    public void testGetInvalidPokemon() throws PokedexException {
-        // Create a new PokemonTrainer using the mocked PokemonTrainerFactory
-        PokemonTrainer ash = pokemonTrainerFactory.createTrainer("Ash Ketchum", Team.VALOR, pokedexFactory);
-
-        // Test getPokemon with invalid ID
-        assertThrows(PokedexException.class, () -> ash.getPokedex().getPokemon(-1));
-        assertThrows(PokedexException.class, () -> ash.getPokedex().getPokemon(1));
-        assertThrows(PokedexException.class, () -> ash.getPokedex().getPokemon(1000));
-    }
-
 }

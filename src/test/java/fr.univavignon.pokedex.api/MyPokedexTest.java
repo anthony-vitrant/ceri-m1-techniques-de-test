@@ -9,8 +9,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.Collections;
 import java.util.Comparator;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 public class MyPokedexTest {
 
@@ -113,6 +112,11 @@ public class MyPokedexTest {
         pokedex.addPokemon(pokemon);
         assertEquals(pokedex.size(), 1);
         assertEquals(pokedex.getPokemon(0), pokemon);
+
+        // Test getPokemon method with invalid ID
+        assertThrows(PokedexException.class, () -> pokedex.getPokemon(-1));
+        assertThrows(PokedexException.class, () -> pokedex.getPokemon(1));
+        assertThrows(PokedexException.class, () -> pokedex.getPokemon(1000));
     }
 
     @Test
