@@ -4,14 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="test test">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokedexFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokedexFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokedexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokedexTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonMetadataProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonMetadataProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonTrainerFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr.univavignon.pokedex.api/IPokemonTrainerFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pokemon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedexFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonMetadataProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonTrainerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/MyPokedex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonComparators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadata.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +78,17 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/antho/OneDrive/M1S2/TechniquesTest/ceri-m1-techniques-de-test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/antho/Documents/M1/ceri-m1-techniques-de-test&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39195403&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -174,6 +193,9 @@
       <workItem from="1680002888465" duration="8471000" />
       <workItem from="1680527056327" duration="6849000" />
       <workItem from="1681893173097" duration="1642000" />
+      <workItem from="1681895692681" duration="549000" />
+      <workItem from="1681896267589" duration="2429000" />
+      <workItem from="1681898706632" duration="133000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de pom.xml">
       <created>1676628212036</created>
@@ -301,7 +323,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681894584233</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fixed test">
+      <created>1681897689574</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1681897689574</updated>
+    </task>
+    <task id="LOCAL-00020" summary="changed java version">
+      <created>1681897934263</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681897934263</updated>
+    </task>
+    <task id="LOCAL-00021" summary="gitignore">
+      <created>1681898833391</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681898833391</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +374,9 @@
     <MESSAGE value="plugin" />
     <MESSAGE value="test" />
     <MESSAGE value="test test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test test" />
+    <MESSAGE value="fixed test" />
+    <MESSAGE value="changed java version" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>
