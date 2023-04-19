@@ -34,7 +34,7 @@
     <build>
         <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
-            <!-- Compiler le code source -->
+            <!-- compilation -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -44,16 +44,15 @@
                     <target>10</target>
                 </configuration>
             </plugin>
-            <!-- Exécuter les tests -->
+            <!-- test -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                        <testSourceDirectory>src/test/java</testSourceDirectory>
-                    </includes>
+                    <excludes>
+                        <exclude>**/*IntegrationTest.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <plugin>
@@ -76,5 +75,7 @@
                 </executions>
             </plugin>
         </plugins>
+
     </build>
+
 </project>
