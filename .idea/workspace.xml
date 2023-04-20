@@ -4,51 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="fix tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_picocli_picocli_4_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_10_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_28_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_10_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="TP5 check style en cours">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pokemon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedexFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonMetadataProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokemonTrainerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/MyPokedex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokedexException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Pokemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonComparators.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonMetadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/PokemonTrainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/classpath.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokedexTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonMetadataProviderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/univavignon/pokedex/api/IPokemonTrainerFactoryTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +178,7 @@
       <workItem from="1681896267589" duration="2429000" />
       <workItem from="1681898706632" duration="133000" />
       <workItem from="1681898856173" duration="3745000" />
-      <workItem from="1681977208243" duration="2473000" />
+      <workItem from="1681977208243" duration="3371000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de pom.xml">
       <created>1676628212036</created>
@@ -431,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681901950030</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="TP5 check style en cours">
+      <created>1681979808510</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1681979808510</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,6 +436,7 @@
     <MESSAGE value="modified MyPokedexTest" />
     <MESSAGE value="oublie paranthèse" />
     <MESSAGE value="fix tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
+    <MESSAGE value="TP5 check style en cours" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP5 check style en cours" />
   </component>
 </project>

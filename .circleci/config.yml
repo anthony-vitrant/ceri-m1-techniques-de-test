@@ -8,11 +8,14 @@ jobs:
     steps:
       - checkout
       - run:
-          name: CheckStyle
-          command : mvn -DskipTests checkstyle:checkstyle
+          name: Build
+          command: mvn -B -DskipTests clean package
       - run:
           name: run the test
           command: mvn test jacoco:report
+      - run:
+          name: CheckStyle
+          command: mvn -DskipTests checkstyle:checkstyle
       - run:
           name: Upload coverage data to Codecov
           command: bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}
