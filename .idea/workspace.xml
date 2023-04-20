@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="gitignore">
+    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="fix tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_picocli_picocli_4_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_10_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_28_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pokemon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedex.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/univavignon/pokedex/api/IPokedexFactory.class" beforeDir="false" />
@@ -106,21 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IPokedexTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pokemon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
-      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.IPokedexTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IPokemonMetadataProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pokemon" />
       <extension name="coverage">
@@ -151,6 +158,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyPokedexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokemon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.univavignon.pokedex.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.univavignon.pokedex.api" />
+      <option name="MAIN_CLASS_NAME" value="fr.univavignon.pokedex.api.MyPokedexTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="fr.univavignon.pokedex.api in pokemon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pokemon" />
       <extension name="coverage">
@@ -168,10 +190,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.fr.univavignon.pokedex.api in pokemon" />
+        <item itemvalue="JUnit.MyPokedexTest" />
         <item itemvalue="JUnit.IPokemonMetadataProviderTest" />
         <item itemvalue="JUnit.IPokemonTrainerFactoryTest" />
         <item itemvalue="JUnit.All in pokemon" />
-        <item itemvalue="JUnit.IPokedexTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +218,8 @@
       <workItem from="1681895692681" duration="549000" />
       <workItem from="1681896267589" duration="2429000" />
       <workItem from="1681898706632" duration="133000" />
+      <workItem from="1681898856173" duration="3745000" />
+      <workItem from="1681977208243" duration="2473000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de pom.xml">
       <created>1676628212036</created>
@@ -344,7 +368,70 @@
       <option name="project" value="LOCAL" />
       <updated>1681898833391</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="test">
+      <created>1681899000618</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681899000618</updated>
+    </task>
+    <task id="LOCAL-00023" summary="test">
+      <created>1681899243194</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681899243194</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update pom">
+      <created>1681899604793</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681899604793</updated>
+    </task>
+    <task id="LOCAL-00025" summary="rollback">
+      <created>1681899806168</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1681899806168</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added test for pokedex">
+      <created>1681900316969</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681900316969</updated>
+    </task>
+    <task id="LOCAL-00027" summary="modified MyPokedexTest">
+      <created>1681901050400</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1681901050400</updated>
+    </task>
+    <task id="LOCAL-00028" summary="oublie paranthèse">
+      <created>1681901136050</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1681901136050</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix tests">
+      <created>1681901602707</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681901602707</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fix tests">
+      <created>1681901950030</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1681901950030</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,11 +459,17 @@
     <MESSAGE value="update" />
     <MESSAGE value="push" />
     <MESSAGE value="plugin" />
-    <MESSAGE value="test" />
     <MESSAGE value="test test" />
     <MESSAGE value="fixed test" />
     <MESSAGE value="changed java version" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="test" />
+    <MESSAGE value="update pom" />
+    <MESSAGE value="rollback" />
+    <MESSAGE value="added test for pokedex" />
+    <MESSAGE value="modified MyPokedexTest" />
+    <MESSAGE value="oublie paranthèse" />
+    <MESSAGE value="fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
   </component>
 </project>

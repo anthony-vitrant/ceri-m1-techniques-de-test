@@ -8,6 +8,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: CheckStyle
+          command : mvn -DskipTests checkstyle:checkstyle
+      - run:
           name: run the test
           command: mvn test jacoco:report
       - run:

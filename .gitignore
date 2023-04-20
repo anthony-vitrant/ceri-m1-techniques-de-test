@@ -2,8 +2,6 @@
 .settings
 .project
 
-target/*
-
 # Compiled class file
 *.class
 
