@@ -95,6 +95,11 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.5.0</version>
+            </plugin>
 
             <!-- generation du badge checkstyle -->
             <plugin>
@@ -116,7 +121,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
     <reporting>
