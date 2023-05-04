@@ -47,7 +47,7 @@ jobs:
             cp -R target/site/apidocs/* gh-pages/
             cd gh-pages
             git add .
-            git commit -m "docs: update javadoc
+            git commit -m "docs: update javadoc"
             git push origin gh-pages
 
 workflows:
