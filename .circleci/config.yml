@@ -45,7 +45,7 @@ jobs:
       - run:
           name: Deploy docs
           command: |
-            npm install -g --silent gh-pages@2.0.1
+            npm install -g --silent gh-pages@3.0
             git config user.email "anthony.vitrant@alumni.univ-avignon.fr"
             git config user.name "anthony-vitrant"
       - run:
