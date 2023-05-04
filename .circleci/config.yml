@@ -37,10 +37,13 @@ jobs:
       - image: node:8.10.0
     steps:
       - checkout
-      - attach_workspace:
-          at: docs
       - run:
-          name: Install and configure dependencies
+          name: Build docs
+          command: |
+            ./mvnw javadoc:javadoc
+            cp -R target/site/apidocs docs
+      - run:
+          name: Deploy docs
           command: |
             npm install -g --silent gh-pages@2.0.1
             git config user.email "anthony.vitrant@alumni.univ-avignon.fr"
