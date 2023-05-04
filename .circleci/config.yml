@@ -9,7 +9,9 @@ jobs:
       - checkout
       - run:
           name: javadoc
-          command: mvn javadoc:javadoc
+          command: |
+            mkdir -p docs/apidocs
+            mvn javadoc:javadoc -Dmaven.javadoc.skip=false -DjavadocDirectory=docs/apidocs
   build-and-test:
     docker:
       - image: circleci/openjdk:10-jdk
