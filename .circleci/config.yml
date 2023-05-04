@@ -44,7 +44,7 @@ jobs:
             git config --global user.email "anthony.vitrant@alumni.univ-avignon.fr"
             git clone --branch=gh-pages --depth=1 git@github.com:anthony-vitrant/ceri-m1-techniques-de-test.git gh-pages
             rm -rf gh-pages/*
-            cp -R target/site/apidocs/* gh-pages/
+            cp -R docs/apidocs/* gh-pages/
             cd gh-pages
             git add .
             git commit -m "docs: update javadoc"
