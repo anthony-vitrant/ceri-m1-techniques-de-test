@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="generation des rapport javadoc + automatisation cirlceci">
+    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="update config.yml">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -181,7 +181,7 @@
       <workItem from="1681982709181" duration="305000" />
       <workItem from="1681983056289" duration="193000" />
       <workItem from="1682367204730" duration="51000" />
-      <workItem from="1683188021097" duration="2754000" />
+      <workItem from="1683188021097" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de pom.xml">
       <created>1676628212036</created>
@@ -421,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683190566456</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update config.yml">
+      <created>1683190791000</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1683190791000</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +446,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ajout de pom.xml" />
     <MESSAGE value="config.yml circleci" />
     <MESSAGE value="avancement du tp3" />
     <MESSAGE value="tp3" />
@@ -464,6 +470,7 @@
     <MESSAGE value="check style fini + badge" />
     <MESSAGE value="java doc plugin" />
     <MESSAGE value="generation des rapport javadoc + automatisation cirlceci" />
-    <option name="LAST_COMMIT_MESSAGE" value="generation des rapport javadoc + automatisation cirlceci" />
+    <MESSAGE value="update config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update config.yml" />
   </component>
 </project>
