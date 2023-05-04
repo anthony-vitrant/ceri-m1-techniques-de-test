@@ -38,11 +38,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build docs
-          command: |
-            ./mvnw javadoc:javadoc
-            cp -R target/site/apidocs docs
-      - run:
           name: Deploy docs
           command: |
             npm install -g --silent gh-pages@3.0
