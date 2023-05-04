@@ -1,0 +1,61 @@
+version: 2.1
+orbs:
+  codecov: codecov/codecov@3.2.4
+jobs:
+  docs-build:
+    docker:
+      - image: cimg/openjdk:11.0
+    steps:
+      - checkout
+      - run:
+          name: javadoc
+          command: |
+            mkdir -p docs/apidocs
+            mvn javadoc:javadoc -Dmaven.javadoc.skip=false -DjavadocDirectory=docs/apidocs
+  build-and-test:
+    docker:
+      - image: circleci/openjdk:10-jdk
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: mvn -B -DskipTests clean package
+      - run:
+          name: run the test
+          command: mvn test jacoco:report
+      - run:
+          name: CheckStyle
+          command: mvn -DskipTests checkstyle:checkstyle
+      - run:
+          name: Upload coverage data to Codecov
+          command: bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}
+      - run:
+          name: Code Coverage
+          command: curl -Os https://uploader.codecov.io/latest/linux/codecov; chmod +x codecov; ./codecov
+  docs-deploy:
+    docker:
+      - image: node:8.10.0
+    steps:
+      - checkout
+      - run:
+          name: Deploy docs
+          command: |
+            npm install -g --silent gh-pages@3.0
+            git config user.email "anthony.vitrant@alumni.univ-avignon.fr"
+            git config user.name "anthony-vitrant"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dist docs/apidocs
+
+workflows:
+  version: 2.1
+  sample:
+    jobs:
+      - build-and-test
+      - docs-build:
+          requires:
+            - build-and-test
+      - docs-deploy:
+          requires:
+            - build-and-test
+            - docs-build
