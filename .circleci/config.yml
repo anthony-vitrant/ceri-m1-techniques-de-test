@@ -57,11 +57,23 @@ workflows:
   version: 2.1
   sample:
     jobs:
-      - build-and-test
+      - build-and-test:
+        filters:
+          branches:
+            only:
+              - master
       - docs-build:
+        filters:
+          branches:
+            only:
+              - master
           requires:
             - build-and-test
       - docs-deploy:
+        filters:
+          branches:
+            only:
+              - master
           requires:
             - build-and-test
             - docs-build
