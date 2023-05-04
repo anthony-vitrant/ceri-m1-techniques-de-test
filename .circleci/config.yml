@@ -34,7 +34,7 @@ jobs:
           command: curl -Os https://uploader.codecov.io/latest/linux/codecov; chmod +x codecov; ./codecov
   docs-deploy:
     docker:
-      - image: node:8.10.0
+      - image: circleci/openjdk:10-jdk
     steps:
       - checkout
       - add_ssh_keys:
