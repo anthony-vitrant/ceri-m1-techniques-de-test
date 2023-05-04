@@ -62,6 +62,6 @@ workflows:
           requires:
             - build-and-test
       - docs-deploy:
-        requires:
-          - build-and-test
-          - docs-build
+          requires:
+            - build-and-test
+            - docs-build
