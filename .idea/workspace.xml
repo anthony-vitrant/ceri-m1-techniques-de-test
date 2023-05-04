@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="changed output javadoc in config.yml">
+    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="fix config.yml">
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +181,7 @@
       <workItem from="1681982709181" duration="305000" />
       <workItem from="1681983056289" duration="193000" />
       <workItem from="1682367204730" duration="51000" />
-      <workItem from="1683188021097" duration="3638000" />
+      <workItem from="1683188021097" duration="4627000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de pom.xml">
       <created>1676628212036</created>
@@ -462,7 +463,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683191516945</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix config.yml">
+      <created>1683191672237</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1683191672237</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fix config.yml">
+      <created>1683192534032</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1683192534032</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,8 +518,8 @@
     <MESSAGE value="generation des rapport javadoc + automatisation cirlceci" />
     <MESSAGE value="update config.yml" />
     <MESSAGE value="change version config.yml" />
-    <MESSAGE value="fix config.yml" />
     <MESSAGE value="changed output javadoc in config.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed output javadoc in config.yml" />
+    <MESSAGE value="fix config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix config.yml" />
   </component>
 </project>
