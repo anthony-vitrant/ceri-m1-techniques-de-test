@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="check style fini + badge">
+    <list default="true" id="494ae24d-0cc7-4796-a940-e79cae2a27b7" name="Changes" comment="generation des rapport javadoc + automatisation cirlceci">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/badges/checkstyle-result.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +179,9 @@
       <workItem from="1681898856173" duration="3745000" />
       <workItem from="1681977208243" duration="5447000" />
       <workItem from="1681982709181" duration="305000" />
-      <workItem from="1681983056289" duration="178000" />
+      <workItem from="1681983056289" duration="193000" />
+      <workItem from="1682367204730" duration="51000" />
+      <workItem from="1683188021097" duration="2754000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de pom.xml">
       <created>1676628212036</created>
@@ -406,7 +407,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681981081555</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="java doc plugin">
+      <created>1681983242511</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681983242511</updated>
+    </task>
+    <task id="LOCAL-00034" summary="generation des rapport javadoc + automatisation cirlceci">
+      <created>1683190566456</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1683190566456</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,6 +462,8 @@
     <MESSAGE value="fix tests" />
     <MESSAGE value="TP5 check style en cours" />
     <MESSAGE value="check style fini + badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="check style fini + badge" />
+    <MESSAGE value="java doc plugin" />
+    <MESSAGE value="generation des rapport javadoc + automatisation cirlceci" />
+    <option name="LAST_COMMIT_MESSAGE" value="generation des rapport javadoc + automatisation cirlceci" />
   </component>
 </project>
