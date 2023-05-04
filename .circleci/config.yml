@@ -2,6 +2,14 @@ version: 2
 orbs:
   codecov: codecov/codecov@3.2.4
 jobs:
+  docs-build:
+    docker:
+      - image: cimg/openjdk:11.0
+    steps:
+      - checkout
+      - run:
+          name: javadoc
+          command: mvn javadoc:javadoc
   build:
     docker:
       - image: circleci/openjdk:10-jdk
@@ -25,3 +33,40 @@ jobs:
     branches:
       only:
         - master
+    docs-deploy:
+      docker:
+        - image: node:8.10.0
+      steps:
+        - checkout
+        - attach_workspace:
+            at: docs/_build
+        - run:
+            name: Install and configure dependencies
+            command: |
+              npm install -g --silent gh-pages@2.0.1
+              git config user.email "anthony.vitrant@alumni.univ-avignon.fr"
+              git config user.name "anthony-vitrant"
+        - run:
+            name: Deploy docs to gh-pages branch
+            command: gh-pages --dist docs/apidocs
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+workflows:
+  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
+    # Inside the workflow, you define the jobs you want to run.
+    jobs:
+      - build:
+        filters:
+          branches:
+            only: master
+      - docs-build:
+        filters:
+          branches:
+            only: master
+      - docs-deploy:
+          requires:
+            - build-and-test
+            - docs-build
+          filters:
+            branches:
+              only: master
