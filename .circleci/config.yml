@@ -30,9 +30,6 @@ jobs:
       - run:
           name: Code Coverage
           command: curl -Os https://uploader.codecov.io/latest/linux/codecov; chmod +x codecov; ./codecov
-    branches:
-      only:
-        - master
   docs-deploy:
     docker:
       - image: node:8.10.0
@@ -50,11 +47,9 @@ jobs:
           name: Deploy docs to gh-pages branch
           command: gh-pages --dist docs/apidocs
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
-    # Inside the workflow, you define the jobs you want to run.
+  version: 2.1
+  sample:
     jobs:
       - build-and-test
       - docs-build:
@@ -70,3 +65,6 @@ workflows:
           filters:
             branches:
               only: master
+    filters:
+      branches:
+        only: master
