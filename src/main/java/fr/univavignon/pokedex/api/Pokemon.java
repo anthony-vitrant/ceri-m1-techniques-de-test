@@ -2,7 +2,6 @@ package fr.univavignon.pokedex.api;
 
 /**
  * Pokemon POJO.
- * 
  * @author fv
  */
 public final class Pokemon extends PokemonMetadata {
@@ -24,7 +23,6 @@ public final class Pokemon extends PokemonMetadata {
 	
 	/**
 	 * Default constructor.
-	 * 
 	 * @param index Pokemon index.
 	 * @param name Pokemon name.
 	 * @param attack Attack level.

@@ -2,7 +2,6 @@ package fr.univavignon.pokedex.api;
 
 /**
  * Custom exception for pokedex related error.
- *
  * @author fv
  */
  public final class PokedexException extends Exception {
@@ -12,7 +11,6 @@ package fr.univavignon.pokedex.api;
 
    /**
     * Default constructor.
-    *
     * @param message Error message.
     * @see Exception#Exception(String)
     */

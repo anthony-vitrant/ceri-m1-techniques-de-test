@@ -8,9 +8,10 @@ import org.apache.commons.collections4.map.UnmodifiableMap;
 
 import fr.univavignon.pokedex.api.IPokemonFactory;
 import fr.univavignon.pokedex.api.Pokemon;
-
 public class RocketPokemonFactory implements IPokemonFactory {
-
+    /**
+     * index2name
+     */
     static Map<Integer, String> index2name;
     static {
         Map<Integer, String> aMap = new HashMap<Integer, String>();
@@ -21,6 +22,9 @@ public class RocketPokemonFactory implements IPokemonFactory {
         index2name = UnmodifiableMap.unmodifiableMap(aMap);
     }
 
+    /**
+     * @return randomstats
+     */
     static int generateRandomStat() {
         int total = 0;
         for(int i=0; i < 1000000; i++)
@@ -32,6 +36,14 @@ public class RocketPokemonFactory implements IPokemonFactory {
         return total / 10000;
     }
 
+    /**
+     * @param index Pokemon index.
+     * @param cp Pokemon CP.
+     * @param hp Pokemon HP.
+     * @param dust Required dust for upgrading pokemon.
+     * @param candy Required candy for upgrading pokemon.
+     * @return a pokemon
+     */
     @Override
     public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) {
         String name;
