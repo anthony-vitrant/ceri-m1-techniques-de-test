@@ -5,14 +5,17 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Map;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 public class RocketPokemonFactoryTest {
 
     private RocketPokemonFactory rocketPokemonFactory;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         rocketPokemonFactory = new RocketPokemonFactory();
     }
