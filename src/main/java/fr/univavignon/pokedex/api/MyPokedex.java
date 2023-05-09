@@ -5,11 +5,18 @@ import java.util.Comparator;
 import java.util.List;
 
 public class MyPokedex implements IPokedex {
-
+    /**
+     * metadataProvider
+     */
     private IPokemonMetadataProvider metadataProvider;
+    /**
+     * pokemonFactory
+     */
     private IPokemonFactory pokemonFactory;
+    /**
+     * pokemons
+     */
     private List<Pokemon> pokemons;
-
     /**
      * @param metadataProvider
      * @param pokemonFactory
@@ -39,7 +46,7 @@ public class MyPokedex implements IPokedex {
      * @return
      */
     @Override
-    public Pokemon createPokemon(int index, int cp, int hp, int dust, int candy) {
+    public Pokemon createPokemon(final int index, final int cp, final int hp, final int dust, final int candy) {
         return pokemonFactory.createPokemon(index, cp, hp, dust, candy);
     }
 
@@ -56,7 +63,7 @@ public class MyPokedex implements IPokedex {
      * @return
      */
     @Override
-    public int addPokemon(Pokemon pokemon) {
+    public int addPokemon(final Pokemon pokemon) {
         pokemons.add(pokemon);
         return pokemons.size() - 1;
     }
@@ -67,7 +74,7 @@ public class MyPokedex implements IPokedex {
      * @throws PokedexException
      */
     @Override
-    public Pokemon getPokemon(int id) throws PokedexException {
+    public Pokemon getPokemon(final int id) throws PokedexException {
         if (id < 0 || id >= pokemons.size()) {
             throw new PokedexException("Invalid Pokemon ID");
         }
@@ -87,7 +94,7 @@ public class MyPokedex implements IPokedex {
      * @return
      */
     @Override
-    public List<Pokemon> getPokemons(Comparator<Pokemon> order) {
+    public List<Pokemon> getPokemons(final Comparator<Pokemon> order) {
         List<Pokemon> sortedPokemons = new ArrayList<>(pokemons);
         sortedPokemons.sort(order);
         return sortedPokemons;
